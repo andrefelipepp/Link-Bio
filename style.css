@@ -310,7 +310,7 @@ a{
     color: var(--color-white);
 }
 
-.redes-sociais .twitch:hover i {
+.redes-sociais .threads:hover i {
     color: #7952b3;
     transition: color 0.3s;
 }
