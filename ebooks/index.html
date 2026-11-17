@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="utf-8">
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        >
+
+        <meta
+            name="description"
+            content="E-books de tecnologia com projetos práticos e materiais de estudo."
+        >
+
+        <title>E-books | André Felipe</title>
+
+        <!-- ESTILOS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main class="wrap">
+
+            <!-- CABEÇALHO -->
+            <header class="top">
+
+                <!-- LOGOTIPO -->
+                <a class="brand" href="../index.html">
+                    André<span>Felipe.</span>
+                </a>
+
+                <!-- VOLTAR À PÁGINA PRINCIPAL -->
+                <a class="back" href="../index.html">
+                    ← Voltar aos links
+                </a>
+
+            </header>
+
+            <!-- APRESENTAÇÃO DO CATÁLOGO -->
+            <section class="hero">
+
+                <div class="eyebrow">
+                    Biblioteca digital
+                </div>
+
+                <h1>
+                    Conhecimento que<br>
+                    <span style="color: var(--blue)">
+                        vira prática.
+                    </span>
+                </h1>
+
+                <p>
+                    Explore e-books de programação e tecnologia,
+                    com explicações acessíveis, exercícios e
+                    projetos para colocar a mão no código.
+                </p>
+
+            </section>
+
+            <!-- CATÁLOGO DE E-BOOKS -->
+            <section aria-label="Catálogo de e-books">
+
+                <!-- BARRA DE PESQUISA E FILTROS -->
+                <div class="toolbar">
+
+                    <!-- CAMPO DE PESQUISA -->
+                    <input
+                        id="busca"
+                        class="search"
+                        type="search"
+                        placeholder="Buscar e-books..."
+                        aria-label="Buscar e-books"
+                    >
+
+                    <!-- FILTROS POR CATEGORIA -->
+                    <div class="chips">
+
+                        <button
+                            class="chip active"
+                            data-filter="Todos"
+                        >
+                            Todos
+                        </button>
+
+                        <button
+                            class="chip"
+                            data-filter="Programação"
+                        >
+                            Programação
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- GRID DE PRODUTOS -->
+                <div
+                    id="catalogo"
+                    class="grid"
+                ></div>
+
+                <!-- MENSAGEM QUANDO NÃO HÁ RESULTADOS -->
+                <p
+                    id="vazio"
+                    class="empty"
+                    hidden
+                >
+                    Nenhum e-book encontrado.
+                </p>
+
+            </section>
+
+            <!-- RODAPÉ -->
+            <footer class="foot">
+                © André Felipe • E-books e materiais digitais
+            </footer>
+
+        </main>
+
+        <!-- SCRIPT DO CATÁLOGO -->
+        <script
+            src="catalogo.js"
+            defer
+        ></script>
+
+    </body>
+</html>
