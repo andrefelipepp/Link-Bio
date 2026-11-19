@@ -10,7 +10,7 @@ const livros = [
         titulo: 'Python na Prática',
         subtitulo: 'Do Zero à Automação e aos Projetos Reais',
         categoria: 'Programação',
-        preco: 39.90,
+        preco: 19.90,
         status: 'em-producao',
         descricao: 'Aprenda Python do básico ao intermediário com exercícios, automações e projetos reais.'
     }
