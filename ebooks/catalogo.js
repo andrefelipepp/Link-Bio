@@ -1,9 +1,3 @@
-
-/* ==========================================
-   CATÁLOGO DE E-BOOKS
-========================================== */
-
-// Lista de e-books disponíveis no catálogo
 const livros = [
     {
         id: 'python-na-pratica',
@@ -16,11 +10,6 @@ const livros = [
     }
 ];
 
-
-/* ==========================================
-   FORMATAÇÃO DE PREÇOS
-========================================== */
-
 // Converte valores numéricos para Real brasileiro
 const money = (n) => {
     return n.toLocaleString('pt-BR', {
@@ -28,11 +17,6 @@ const money = (n) => {
         currency: 'BRL'
     });
 };
-
-
-/* ==========================================
-   CAPA DOS E-BOOKS
-========================================== */
 
 // Gera a capa provisória do e-book
 const cover = () => {
@@ -57,11 +41,6 @@ const cover = () => {
         </div>
     `;
 };
-
-
-/* ==========================================
-   RENDERIZAÇÃO DO CATÁLOGO
-========================================== */
 
 function render() {
 
@@ -142,20 +121,10 @@ function render() {
     document.querySelector('#vazio').hidden = lista.length !== 0;
 }
 
-
-/* ==========================================
-   EVENTOS DA PESQUISA
-========================================== */
-
 // Atualiza o catálogo conforme o usuário digita
 document
     .querySelector('#busca')
     .addEventListener('input', render);
-
-
-/* ==========================================
-   EVENTOS DOS FILTROS
-========================================== */
 
 // Configura os botões de categorias
 document.querySelectorAll('.chip').forEach((b) => {
@@ -175,11 +144,6 @@ document.querySelectorAll('.chip').forEach((b) => {
     });
 
 });
-
-
-/* ==========================================
-   INICIALIZAÇÃO
-========================================== */
 
 // Carrega o catálogo ao abrir a página
 render();
